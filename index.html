@@ -114,11 +114,14 @@
     </div>
   </div>
 
-  <!-- Música de fundo -->
-  <audio autoplay loop>
-    <source src="musica.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio.
-  </audio>
+const musica = document.getElementById("musica");
+
+btnYes.addEventListener("click", () => {
+  response.style.display = "block";
+  btnYes.style.display = "none";
+  btnNo.style.display = "none";
+  musica.play();
+});
 
   <script>
     const btnYes = document.getElementById("yes");
